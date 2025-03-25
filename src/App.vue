@@ -5,6 +5,7 @@ let click =  ref(1)
 let custo = ref(10)
 let auto = ref(false)
 
+
 function autaDes(){
   if(valor.value >= 100){
     valor.value -= 100
@@ -19,6 +20,8 @@ function autaDes(){
 }
  
 }
+
+  
 
 function incrementar(){
   valor.value += click.value
@@ -58,7 +61,6 @@ console.log(valor)
   <button @click="tirar()">descrementar</button>
   <button @click="upgrade()">upgrade (custo {{ custo }})</button>
   <button @click="autaDes()">autoCliker (custo 100)</button>
-  <button @click="dbg">Gerente</button>
   <p>valor do clique: {{ click }}</p>
 
   </div>
